@@ -3,14 +3,14 @@ import { SearchBarContainer } from './Home/Searchbar/SearchBarContainer'
 import { SurpriseMe } from './Home/SurpriseMe/SurpriseMe'
 import './Home/Home.css'
 
-export const Home = ({data}) => {
+export const Home = () => {
   return (
     <div className='home-box'>
       <div className='welcome-container'>
       <h1 className='welcome-message'>WELCOME!</h1>
       <h2 className='welcome-message'>Search for books you want to read!</h2>
       </div>
-      <SearchBarContainer data={data}/>
+      <SearchBarContainer/>
       <SurpriseMe/>
     </div>
   )

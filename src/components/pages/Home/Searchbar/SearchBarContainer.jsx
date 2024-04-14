@@ -5,11 +5,11 @@ import { SearchBar } from './SearchBar'
 
 
 
-export const SearchBarContainer = ({data}) => {
+export const SearchBarContainer = () => {
   const [results, setResults] = useState([]); // do przekazania danych z komponentów filtrujących dane do tych co wyświetlają dane
   return (
     <div className='search-bar-container'>
-      <SearchBar setResults={setResults} data={data}/> 
+      <SearchBar setResults={setResults}/> 
       <SearchList results={results}/>
     </div>
   )

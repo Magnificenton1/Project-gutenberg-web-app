@@ -36,9 +36,6 @@
     font-size: larger;
     background-color: rgba(165, 165, 165, 0.527);
 }
-.button-box{
-    height: 55%;
-}
 .lang-box{
     height: 100%;
     width: 30%;
@@ -127,8 +124,13 @@
     background-color: gray;
     color: lightgray;
 }
-.disabled:active, .search-button:active{
+.disabled:active{
+    background-color: lightgray;
+    color: gray;
+} 
+.search-button:active{
     background-color: goldenrod;
+    color: gold;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

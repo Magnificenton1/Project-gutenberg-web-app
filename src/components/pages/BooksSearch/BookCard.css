@@ -38,7 +38,7 @@
     text-overflow: ellipsis;
     max-width: 200px;
   }
-.fav-text{
+.fav-text{ 
     margin-top: 15px;
     border-color: black;
     font-size: 15px;
@@ -48,8 +48,8 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 200px;
-}
+    max-width: 200px;}
+/* oddzieliłem text od fav-text, w przypadku, gdybym chciał zmienić znacznie wygląd tak samo z card i fav-card */
 .cover{
     width: 168px;
     height: 252px;

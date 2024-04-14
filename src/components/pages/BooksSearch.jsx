@@ -14,10 +14,10 @@ export const BooksSearch = ({favourites, setFavourites}) => {
   const [page, setPage] = useState([]);
   const [count, setCount] = useState([]);
 
-  const demoUrl = 'https://gutendex.com/books'; //books?search=%20&topic=&page=&sort=descending&languages=
+  const demoUrl = 'https://gutendex.com/books';
   let url;
 
-  const filterURL = () =>{ // CREATES URL TO USE IN FETCH
+  const filterURL = () =>{ // tworzy URL i przekazuje do fetch
     url = demoUrl;
     url += '?search=' + authorValue + '%20' + titleValue + '&topic=' + topicValue;
       if(selectedLang.length > 0){
@@ -38,8 +38,8 @@ export const BooksSearch = ({favourites, setFavourites}) => {
     fetch(givenUrl)
       .then((response) => response.json())
       .then((api) => {
-        setCount(api.count);     // setting book count for 'next' button in BookFilters
-        setResults(api.results); // PASSING DATA 
+        setCount(api.count);     // potrzebne do dodania zabezpieczeń do przycisku next
+        setResults(api.results);  
       }).catch((error) => console.error("Error:", error));
   }
 

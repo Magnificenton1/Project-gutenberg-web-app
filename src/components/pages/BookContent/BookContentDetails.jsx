@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react'
-import {useParams} from 'react-router-dom'
-import './BookContentDetails.css'
+import React, {useState, useEffect} from 'react';
+import {useParams} from 'react-router-dom';
+import './BookContentDetails.css';
 import {FaStar} from 'react-icons/fa';
 
 export const BookContentDetails = ({favourites, setFavourites}) => {
@@ -14,7 +14,7 @@ export const BookContentDetails = ({favourites, setFavourites}) => {
   let containsId = favourites.includes(id);
 
 
-  const fetchData = () => {//FETCH URL FOR ONE BOOK
+  const fetchData = () => { //FETCH URL FOR ONE BOOK
     fetch(fetchLink)
     .then((response) => response.json())
     .then((api) => {

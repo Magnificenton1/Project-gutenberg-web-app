@@ -3,7 +3,7 @@ import './BookFilters.css'
 
 export const BookFilters = ({selectedLang, setSelectedLang, page, setPage, setTitleValue, setTopicValue, setAuthorValue, filterURL, count}) => { //let lang = ["en", "de", "fr", "es", "it", "nl", "pt", "fi"]; żebym nie zapomniał jakie są języki
 
-    const handleFilterButtonClick = (selectedCategory) => { // CLICKING ON BUTTONS ADDS OR SUBTRACTS ARGUMENTS IN AN ARRAY
+    const handleFilterButtonClick = (selectedCategory) => { // logika przycisków od języków - array
         if (selectedLang.includes(selectedCategory)) {
           let lang = selectedLang.filter((el) => el !== selectedCategory);
           setSelectedLang(lang);
@@ -18,7 +18,7 @@ export const BookFilters = ({selectedLang, setSelectedLang, page, setPage, setTi
         PageNumber = 1;
     }
 
-    useEffect(() => { // SETS PAGE TO 1 AT THE START AND FILTERS USING SECOND USEEFFECT
+    useEffect(() => { // ustawia strone na 1 i wywołuje useEffect poniżej do wyświetlenia danych
         setPage("1");
     }, []);
 
@@ -27,22 +27,22 @@ export const BookFilters = ({selectedLang, setSelectedLang, page, setPage, setTi
         if(page > PageNumber){
             setPage(PageNumber);
         };
-        if(!(page=='') && !(page>PageNumber)){ // TO MAKE TYPING-IN PAGE LESS FRUSTRATING
+        if(!(page=='') && !(page>PageNumber)){ // !(page=='') ułatwia zmiane strony poprzez input
             filterURL();
         };
     }, [page]);
 
     const handleButtonPageChange = (operation, isPrevious) => {
-        if(page == 1 && isPrevious == true){ // IF PAGE==1 CAN'T USE PREVIOUS BUTTON
+        if(page == 1 && isPrevious == true){ // nie można użyć przysku previous, gdy jest się na stronie 1
             return;
         }
-        if(count < 33 && isPrevious == false){ // IF THERE ARE NO MORE PAGES CAN'T USE NEXT BUTTON
+        if(count < 33 && isPrevious == false){ // nie można użyć przycisku next, gdy nie ma następnych stron
             return;
         }
         let x = operation + "";
         setPage(x);
     }
-    const handleSearchButtonClick = () => { // SETS PAGE TO 1 AFTER SEARCHING
+    const handleSearchButtonClick = () => { // po wyszukiwaniu - resetuje nr strony do 1
         if(page == "1"){
             filterURL();
         }else{
