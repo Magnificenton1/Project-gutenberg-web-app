@@ -1,6 +1,5 @@
 import React, {useState, useEffect}from 'react'
 import { BookList } from './BooksSearch/BookList';
-import './Saved/Saved.css'
 
 export const Saved = ({favourites}) => {
   const [savedResults, setSavedResults] = useState([]);
