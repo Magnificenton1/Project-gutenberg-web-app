@@ -1,0 +1,16 @@
+.search-list{
+
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 8px #ddd;
+    border-radius: 10px;
+    margin-top: 4rem;
+    max-height: 300px;
+    overflow-y: scroll;
+    position: absolute;
+}
+.search-list::-webkit-scrollbar {
+    display: none;
+  }

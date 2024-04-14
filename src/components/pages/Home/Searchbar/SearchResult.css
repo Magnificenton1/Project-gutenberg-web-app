@@ -1,0 +1,14 @@
+.search-result{
+    padding: 10px 20px;
+}
+
+.search-result:hover {
+    background-color: #efefef;
+}
+.link{
+    text-decoration: none;
+    color:black;
+}
+.link:active,.link:visited{
+    color:black
+}

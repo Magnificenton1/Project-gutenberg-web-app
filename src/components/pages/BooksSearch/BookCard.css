@@ -1,0 +1,64 @@
+.card{
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 220px;
+    height: 336px;
+    display: inline-block;
+    background-color: rgb(31, 31, 31);
+}
+/*wymiary to było 250x400 ale nie rozmieszczaly sie dobrze karty u mnie, zmniejszone o 16% */
+.card:hover{
+    background-color: rgb(31, 31, 31);
+}
+.fav-card{
+    border: 2px solid gold;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 210px;
+    height: 336px;
+    display: inline-block;
+    background-color: rgb(31, 31, 31);
+}
+.text {
+    margin-top: 15px;
+    border-color: black;
+    font-size: 15px;
+    color: white;
+    width: 168px;
+    height: 50.4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+  }
+.fav-text{
+    margin-top: 15px;
+    border-color: black;
+    font-size: 15px;
+    color: gold;
+    width: 168px;
+    height: 50.4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+.cover{
+    width: 168px;
+    height: 252px;
+    border-color: black;
+    border: solid 1px;
+    border-radius: 10px;
+}
+.favourite{
+    border: 2px solid gold;
+}
+
+

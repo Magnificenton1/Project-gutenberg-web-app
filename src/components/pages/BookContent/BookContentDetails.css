@@ -1,0 +1,128 @@
+.book-content-info-box{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px white;
+    height: 30%;
+    width: 80%;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+    background-color: rgb(31, 31, 31);
+    align-items: center;
+    min-width: 600px;
+    margin-top: 3%;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+}
+.book-content-box{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    height: 540px;
+    padding: 2vh;
+    background-color:aliceblue;
+    align-items: center;
+    min-width: 600px;
+    margin-top: 0.5%;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+}
+.star{
+    margin-top: 2%;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.star:hover{
+    color: gold;
+}
+.star-active{
+    color: gold;
+    margin-top: 2%;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.whole-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topic-container,.cover-container,.other-container{
+    width: 33.3%;
+    height: 100%;
+}
+
+.other-container{
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 10px;
+    border-left: rgb(31, 31, 31) 4px solid;
+    text-align: center;
+    color: rgb(31, 31, 31);
+    margin-bottom: 8px;
+}
+.topic-container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.subject-container,.bookshelves-container{
+    height: 50%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background-color: rgb(31, 31, 31);
+}
+.bookshelves-container{
+    margin-top: 10px;
+}
+.author-box,.read-now-box{
+    height: 50%;
+    background-color: rgb(31, 31, 31);
+    color:white;
+    border-left: solid white;
+}
+.author-box{
+    border-top-right-radius: 20px;
+}
+.read-now-box{
+    border-bottom-right-radius: 20px;
+}
+.content-image{
+    width: 100%;
+    height: 85%;
+    border-radius: 20px;
+    border: solid 3px rgb(31, 31, 31);
+    margin-top:30%;
+    margin-left: 5px;
+}
+.cover-container,.read-now-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-button{
+    font-size: 20px;
+    width: 60%;
+    margin-top: 10%;
+    height: 22%;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(31, 31, 31);
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    text-decoration:none; 
+    cursor:pointer;
+}
+.second-button{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
