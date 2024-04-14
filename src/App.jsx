@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import './App.css'
 import { Navbar } from './components/Navbar/Navbar'
-import { Info, Home, Saved, BooksSearch } from './components/pages' // import z index.js
+import { Info, Home, Saved, BooksSearch } from './components/pages/pageIndex' // import z index.js
 import { BookContentDetails } from './components/pages/BookContent/BookContentDetails'
 import { BookContent } from './components/pages/BookContent'
 
